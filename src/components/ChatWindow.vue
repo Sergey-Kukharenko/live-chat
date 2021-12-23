@@ -46,7 +46,7 @@ export default {
 <style>
 .chat-window {
   background: #fafafa;
-  padding: 30px 20px;
+  padding: 20px 20px;
 }
 
 .single {
@@ -79,7 +79,7 @@ export default {
 
 @media only screen and (max-width: 767px) {
   .messages {
-    height: calc(100vh - 236px);
+    height: calc(100vh - 318px);
   }
 }
 
