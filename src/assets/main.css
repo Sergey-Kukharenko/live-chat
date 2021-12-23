@@ -4,12 +4,23 @@ body {
 }
 
 .container {
-    width: 90%;
     max-width: 960px;
-    margin: 80px auto;
     border-radius: 20px;
     box-shadow: 2px 4px 6px rgba(28, 6, 49, 0.1);
     background: white;
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        width: 90%;
+        margin: 80px auto;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .container {
+        height: calc(100vh - 16px);
+    }
 }
 
 .error {

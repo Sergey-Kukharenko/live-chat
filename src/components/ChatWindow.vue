@@ -66,10 +66,21 @@ export default {
 }
 
 .messages {
-  max-height: 400px;
   overflow: auto;
   scrollbar-width: thin;
   scrollbar-color: #666 #ddd;
+}
+
+@media only screen and (min-width: 768px) {
+  .messages {
+    max-height: 400px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .messages {
+    height: calc(100vh - 236px);
+  }
 }
 
 .messages::-webkit-scrollbar {
