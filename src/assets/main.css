@@ -17,6 +17,14 @@ body {
     }
 }
 
+@media only screen and (max-width: 767px) {
+    .container:not(.welcome) {
+        display: flex;
+        flex-direction: column;
+        height: calc(100vh - 126px);
+    }
+}
+
 .error {
     color: #ff3f80;
     font-size: 14px;

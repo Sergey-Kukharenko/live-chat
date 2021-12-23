@@ -8,7 +8,6 @@
         <span class="message">{{ doc.message }}</span>
       </div>
     </div>
-    <div></div>
   </div>
 </template>
 
@@ -49,8 +48,25 @@ export default {
   padding: 20px 20px;
 }
 
+@media only screen and (max-width: 767px) {
+  .chat-window {
+    flex: 1;
+    position: relative;
+  }
+}
+
 .single {
   margin: 18px 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .single:first-child {
+    margin-top: 0;
+  }
+
+  .single:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .created-at {
@@ -79,7 +95,12 @@ export default {
 
 @media only screen and (max-width: 767px) {
   .messages {
-    height: calc(100vh - 318px);
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    margin: auto;
   }
 }
 
